@@ -102,26 +102,15 @@ export default function Index() {
         {/* ── HOME ── */}
         {active === "home" && (
           <div className="space-y-10">
-            <div className="text-center space-y-5 animate-fade-in-up delay-100">
-              <div className="mx-auto w-28 h-28 rounded-full overflow-hidden border-2 border-[#D4AF37]/60" style={{boxShadow: "0 0 30px rgba(212,175,55,0.2)"}}>
-                <img src={LION_LOGO} alt="Leone FamQ" className="w-full h-full object-cover" />
+            <div className="text-center space-y-0 animate-fade-in-up delay-100">
+              <div className="mx-auto w-52 overflow-hidden border-2 border-[#D4AF37]/60 rounded-sm" style={{boxShadow: "0 0 40px rgba(212,175,55,0.2)"}}>
+                <img src={LION_LOGO} alt="Leone FamQ" className="w-full h-full object-cover block" />
+                <div className="bg-[#0D0D0D] border-t border-[#D4AF37]/30 py-3 px-4">
+                  <h1 className="font-display text-2xl font-bold tracking-widest" style={{background: "linear-gradient(90deg,#D4AF37,#F0C84A,#D4AF37,#8B7218)", backgroundSize: "200% auto", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text"}}>
+                    Leone FamQ
+                  </h1>
+                </div>
               </div>
-              <div>
-                <h1 className="font-display text-5xl md:text-6xl font-bold tracking-widest" style={{background: "linear-gradient(90deg,#D4AF37,#F0C84A,#D4AF37,#8B7218)", backgroundSize: "200% auto", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text", textShadow: "none"}}>
-                  Leone FamQ
-                </h1>
-                <p className="text-[#8B7218] font-body text-sm tracking-[0.3em] uppercase mt-2">Сообщество • Взаимодействие • Сила</p>
-              </div>
-              <p className="text-[#C4A84A]/70 font-body text-base max-w-lg mx-auto leading-relaxed">
-                Закрытая платформа для участников Leone FamQ. Общайтесь, координируйтесь и развивайтесь вместе.
-              </p>
-              <button
-                onClick={() => setActive("profile")}
-                className="inline-flex items-center gap-2 px-7 py-3 bg-[#D4AF37] text-[#0A0A0A] font-body font-semibold text-sm tracking-widest uppercase rounded-sm hover:bg-[#F0C84A] transition-all duration-200 hover:scale-105"
-              >
-                <Icon name="User" size={15} />
-                Мой профиль
-              </button>
             </div>
 
             {/* Stats */}
@@ -140,29 +129,6 @@ export default function Index() {
               ))}
             </div>
 
-            {/* Members preview */}
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="font-display text-2xl text-[#D4AF37]">Участники</h2>
-                <button onClick={() => setActive("profile")} className="text-xs text-[#8B7218] hover:text-[#D4AF37] font-body tracking-wide transition-colors">
-                  Все →
-                </button>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                {members.map((m) => (
-                  <div key={m.name} className="bg-[#0D0D0D] border border-[#1F1F1F] rounded-sm p-4 flex flex-col items-center gap-2 hover:border-[#D4AF37]/30 transition-all duration-200">
-                    <div className="relative w-12 h-12 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center">
-                      <span className="font-display text-[#D4AF37] font-bold text-sm">{m.avatar}</span>
-                      {m.online && <span className="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 rounded-full border-2 border-[#0D0D0D]" />}
-                    </div>
-                    <div className="text-center">
-                      <div className="font-body text-xs font-medium text-[#E8D89A] leading-tight">{m.name}</div>
-                      <div className="font-body text-[10px] text-[#8B7218] mt-0.5">{m.role}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         )}
 
