@@ -46,10 +46,10 @@ export default function Index() {
   const [mobileNav, setMobileNav] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-[#E8D89A] flex flex-col">
+    <div className="min-h-screen bg-black text-[#E8D89A] flex flex-col">
 
       {/* TOP HEADER */}
-      <header className="border-b border-[#1F1F1F] px-6 py-3 flex items-center justify-between sticky top-0 z-50 bg-[#0A0A0A]/95 backdrop-blur-sm">
+      <header className="border-b border-[#1F1F1F] px-6 py-3 flex items-center justify-between sticky top-0 z-50 bg-black/95 backdrop-blur-sm">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full overflow-hidden border border-[#D4AF37]/40" style={{boxShadow: "0 0 12px rgba(212,175,55,0.2)"}}>
             <img src={LION_LOGO} alt="Leone FamQ" className="w-full h-full object-cover" />
