@@ -105,7 +105,7 @@ export default function Index() {
             <div className="text-center space-y-0 animate-fade-in-up delay-100">
               <div className="mx-auto w-52 overflow-hidden border-2 border-[#D4AF37]/60 rounded-sm" style={{boxShadow: "0 0 40px rgba(212,175,55,0.2)"}}>
                 <img src={LION_LOGO} alt="Leone FamQ" className="w-full h-full object-cover block" />
-                <div className="bg-[#0D0D0D] border-t border-[#D4AF37]/30 py-3 px-4">
+                <div className="bg-[#0D0D0D] py-3 px-4">
                   <h1 className="font-display text-2xl font-bold tracking-widest" style={{background: "linear-gradient(90deg,#D4AF37,#F0C84A,#D4AF37,#8B7218)", backgroundSize: "200% auto", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text"}}>
                     Leone FamQ
                   </h1>
