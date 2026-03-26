@@ -107,7 +107,7 @@ export default function Index() {
                 <div className="relative">
                   <img src={LION_LOGO} alt="Leone FamQ" className="w-full h-full object-cover block" />
                   <h1 className="font-display text-2xl font-bold tracking-widest absolute bottom-2 left-0 right-0 text-center" style={{background: "linear-gradient(90deg,#D4AF37,#F0C84A,#D4AF37,#8B7218)", backgroundSize: "200% auto", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text"}}>
-                    Leone FamQ
+                    Leone Famq
                   </h1>
                 </div>
               </div>
